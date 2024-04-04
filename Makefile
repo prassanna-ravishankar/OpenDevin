@@ -17,6 +17,7 @@ build:
 	@echo "Installing Python dependencies..."
 	@python -m pip install pipenv
 	@python -m pipenv install -v
+	@python -m pipenv run playwright install
 	@echo "Setting up frontend environment..."
 	@echo "Detect Node.js version..."
 	@cd frontend && node ./scripts/detect-node-version.js
